@@ -1,0 +1,36 @@
+{
+  "title": "Correlatos Neurocognitivos Atencion Memoria Trabajo Entornos Digitales Latinoamerica",
+  "description": "Open research dataset: Correlatos Neurocognitivos Atencion Memoria Trabajo Entornos Digitales Latinoamerica. By Juan Moisés de la Serna Tuya (UNIR).",
+  "creators": [
+    {
+      "name": "de la Serna Tuya, Juan Moisés",
+      "affiliation": "Universidad Internacional de La Rioja (UNIR)",
+      "orcid": "0000-0002-8401-8018"
+    }
+  ],
+  "keywords": [
+    "neurocognitive correlates",
+    "neuroscience",
+    "digital",
+    "latin america",
+    "open data",
+    "research",
+    "dataset"
+  ],
+  "language": "eng",
+  "access_right": "open",
+  "license": "cc-zero",
+  "upload_type": "dataset",
+  "communities": [
+    {
+      "identifier": "zenodo"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isIdenticalTo",
+      "identifier": "https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica",
+      "scheme": "url"
+    }
+  ]
+}
