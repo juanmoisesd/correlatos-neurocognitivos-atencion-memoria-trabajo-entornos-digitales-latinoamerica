@@ -60,3 +60,29 @@ Public Domain (CC0 1.0). Free to use, share and modify without restrictions.
 ---
 
 **Juan Moisés de la Serna Tuya** · UNIR · [ORCID](https://orcid.org/0000-0002-8401-8018) · [GitHub](https://github.com/juanmoisesd)
+
+## How to Cite
+
+If you use this repository in your research, please cite:
+
+> de la Serna, J. M. (2026). *Correlatos Neurocognitivos Atencion Memoria Trabajo Entornos Digitales Latinoamerica*. Universidad Internacional de La Rioja (UNIR).
+> https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica 10.5281/zenodo.19145316
+
+See `CITATION.cff` for formatted references.
+
+## Overview
+This repository contains data and resources related to **correlatos neurocognitivos atencion memoria trabajo entornos digitales latinoamerica**. It is part of an open science initiative to share research findings and datasets with the global scientific community.
+
+## Research Context
+The project addresses key questions in the field of neuroscience and social sciences, focusing on providing accessible data for further analysis and validation.
+
+## Repository Structure
+- `data/`: Contains the datasets used in this research.
+- `src/`: Source code for data processing and analysis.
+- `results/`: Output files, figures, and metrics.
+
+## Usage
+To use the resources in this repository, clone the project and ensure you have the necessary dependencies installed. Refer to the specific documentation in each folder for more details.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
