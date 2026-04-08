@@ -1,0 +1,4 @@
+identifier,relation,scheme
+10.5281/zenodo.19145316,isIdenticalTo,doi
+10.6084/m9.figshare.31436764,isVersionOf,doi
+https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica,isHostedAt,url

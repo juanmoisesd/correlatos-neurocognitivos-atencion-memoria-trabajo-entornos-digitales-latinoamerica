@@ -1,0 +1,18 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": { "@id": "https://w3id.org/ro/crate/1.1" },
+      "about": { "@id": "./" }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Correlatos Neurocognitivos de la Atención y la Memoria de Trabajo en Entornos Digitales en Latinoamérica",
+      "description": "Research dataset on neurocognition in digital environments.",
+      "license": { "@id": "https://creativecommons.org/publicdomain/zero/1.0/" }
+    }
+  ]
+}

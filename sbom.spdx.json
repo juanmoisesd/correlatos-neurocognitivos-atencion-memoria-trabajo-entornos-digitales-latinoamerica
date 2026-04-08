@@ -1,0 +1,8 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "name": "neurocognitive-dataset-sbom",
+  "packages": [
+    { "name": "pandas", "versionInfo": "2.2.1" }
+  ]
+}
