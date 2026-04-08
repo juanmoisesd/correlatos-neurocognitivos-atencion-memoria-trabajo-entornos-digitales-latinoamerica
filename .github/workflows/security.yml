@@ -15,7 +15,7 @@ jobs:
         run: |
           pip install bandit
           bandit -r scripts/
-      - name: Run Safety
+      - name: Run Audit
         run: |
-          pip install safety
-          safety scan
+          pip install pip-audit
+          pip-audit
