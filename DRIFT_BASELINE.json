@@ -1,0 +1,13 @@
+{
+  "baseline_date": "2024-04-06",
+  "metrics": {
+    "mean_attention_score": 75.2,
+    "mean_wm_score": 68.5,
+    "std_dev_attention": 12.4,
+    "std_dev_wm": 10.8
+  },
+  "population_segments": [
+    { "segment": "18-25", "size": 150 },
+    { "segment": "26-40", "size": 200 }
+  ]
+}

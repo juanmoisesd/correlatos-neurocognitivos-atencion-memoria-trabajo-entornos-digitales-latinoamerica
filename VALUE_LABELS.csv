@@ -1,0 +1,5 @@
+variable,value,label
+gender,M,Male
+gender,F,Female
+gender,O,Other
+region,LATAM,Latin America

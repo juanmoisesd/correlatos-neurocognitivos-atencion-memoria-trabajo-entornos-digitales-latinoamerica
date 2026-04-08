@@ -1,0 +1,10 @@
+lineage:
+  source: "Primary Research"
+  collection_method: "Digital Cognitive Assessments"
+  processing_steps:
+    - step: 1
+      description: "Raw data extraction from assessment platform"
+    - step: 2
+      description: "De-identification and removal of PII"
+    - step: 3
+      description: "Validation against schema"
