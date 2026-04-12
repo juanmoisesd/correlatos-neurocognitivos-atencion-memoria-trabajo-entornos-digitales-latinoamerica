@@ -1,0 +1,9 @@
+{
+  "_type": "https://in-toto.io/Statement/v0.1",
+  "subject": [{"name": "dataset.csv", "digest": {"sha256": "7f83b1657ff1f..."}}],
+  "predicateType": "https://slsa.dev/provenance/v0.2",
+  "predicate": {
+    "builder": { "id": "https://github.com/juanmoisesd/..." },
+    "buildType": "https://github.com/actions/..."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Correlatos Neurocognitivos de la Atención y la Memoria de Trabajo en Entornos Digitales en Latinoamérica: Base de Datos de Cifras y Estadísticas",
+  "description": "Database of figures and statistics on the neurocognitive correlates of attention and working memory in digital environments in Latin America.",
+  "url": "https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica",
+  "identifier": [
+    "https://doi.org/10.5281/zenodo.19145316"
+  ],
+  "keywords": [
+    "neurocognition",
+    "attention",
+    "working memory",
+    "digital environments",
+    "Latin America"
+  ],
+  "creator": {
+    "@type": "Person",
+    "name": "Juan Moisés de la Serna Tuya",
+    "givenName": "Juan Moisés",
+    "familyName": "de la Serna Tuya",
+    "sameAs": "https://orcid.org/0000-0002-8401-8018"
+  },
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+}

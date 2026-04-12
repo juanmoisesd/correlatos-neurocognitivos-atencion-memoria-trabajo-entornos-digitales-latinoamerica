@@ -1,0 +1,10 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "metadata": {
+    "component": { "name": "neurocognitive-dataset", "version": "1.0.0", "type": "data" }
+  },
+  "components": [
+    { "name": "pandas", "version": "2.2.1" }
+  ]
+}
