@@ -2,11 +2,10 @@ import os
 import requests
 import json
 
-# Fetch token from environment variable
 ACCESS_TOKEN = os.environ.get('ZENODO_TOKEN')
 BASE_URL = 'https://zenodo.org/api/deposit/depositions'
 
-def publish(collection_type='English'):
+def publish(collection_type='French'):
     if not ACCESS_TOKEN:
         print("Error: ZENODO_TOKEN environment variable not set.")
         return
@@ -27,7 +26,12 @@ def publish(collection_type='English'):
     print(f"Deposition created for {collection_type}: {deposition_id}")
 
     # 2. Upload files
-    pdf_dir = 'manuscripts/pdfs_en' if collection_type == 'English' else 'manuscripts/pdfs'
+    dirs = {
+        'English': 'manuscripts/pdfs_en',
+        'Spanish': 'manuscripts/pdfs',
+        'French': 'manuscripts/pdfs_fr'
+    }
+    pdf_dir = dirs.get(collection_type, 'manuscripts/pdfs')
     if not os.path.exists(pdf_dir):
         print(f"Error: Directory {pdf_dir} does not exist.")
         return
@@ -47,24 +51,33 @@ def publish(collection_type='English'):
                 print(f"Error uploading {filename}: {r.status_code}")
 
     # 3. Add metadata
-    if collection_type == 'English':
-        metadata = {
+    metadata_map = {
+        'English': {
             'title': 'Advanced Meta-Analyses in Neuroscience and Emotional Psychology (English Collection)',
             'upload_type': 'publication',
             'publication_type': 'article',
             'description': 'A comprehensive collection of 10 advanced scientific meta-analyses exploring emotional architecture, neuroplasticity, mindfulness, and the social brain.',
             'creators': [{'name': 'de la Serna, Juan Moisés', 'affiliation': 'UNIR'}],
             'keywords': ['Neuroscience', 'Emotional Intelligence', 'Meta-analysis', 'PRISMA', 'Brain Plasticity', 'Mindfulness']
-        }
-    else:
-        metadata = {
+        },
+        'Spanish': {
             'title': 'Meta-análisis en Neurociencia y Psicología Emocional (Colección en Español)',
             'upload_type': 'publication',
             'publication_type': 'article',
             'description': 'Colección de 10 metaanálisis sobre arquitectura emocional, neuroplasticidad, mindfulness y cerebro social.',
             'creators': [{'name': 'de la Serna, Juan Moisés', 'affiliation': 'UNIR'}]
+        },
+        'French': {
+            'title': 'Collection de Méta-Analyses en Neurosciences et Psychologie Émotionnelle (Français)',
+            'upload_type': 'publication',
+            'publication_type': 'article',
+            'description': 'Une collection de 10 méta-analyses scientifiques explorant l\'architecture émotionnelle, la neuroplasticité, la pleine conscience et le cerveau social.',
+            'creators': [{'name': 'de la Serna, Juan Moisés', 'affiliation': 'UNIR'}],
+            'keywords': ['Neurosciences', 'Intelligence émotionnelle', 'Méta-analyse', 'PRISMA', 'Plasticité cérébrale', 'Pleine conscience']
         }
+    }
 
+    metadata = metadata_map.get(collection_type, metadata_map['Spanish'])
     data = {'metadata': metadata}
     r = requests.put(f"{BASE_URL}/{deposition_id}", params=params, data=json.dumps(data), headers=headers)
     if r.status_code == 200:
@@ -85,4 +98,6 @@ def publish(collection_type='English'):
     print(f"Deposition URL: https://zenodo.org/deposit/{deposition_id}")
 
 if __name__ == "__main__":
-    publish('English')
+    import sys
+    ctype = sys.argv[1] if len(sys.argv) > 1 else 'French'
+    publish(ctype)

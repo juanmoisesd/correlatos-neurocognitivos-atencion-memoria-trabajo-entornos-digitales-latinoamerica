@@ -29,7 +29,6 @@ class MyFPDF(FPDF, HTMLMixin):
             else:
                 self.add_font('DejaVu', 'B', font_path)
 
-            # Add italic/oblique explicitly as same file if others missing to avoid 'Undefined font' error
             font_italic_path = font_path.replace('.ttf', '-Oblique.ttf')
             if os.path.exists(font_italic_path):
                 self.add_font('DejaVu', 'I', font_italic_path)
@@ -41,7 +40,7 @@ class MyFPDF(FPDF, HTMLMixin):
             self.set_font('DejaVu', 'B', 8)
         except:
             self.set_font('helvetica', 'B', 8)
-        self.cell(0, 10, 'Scientific Meta-Analysis Collection - Juan Moisés de la Serna', align='C')
+        self.cell(0, 10, 'Collection de Méta-Analyses Scientifiques - Juan Moisés de la Serna', align='C')
         self.ln(10)
 
     def footer(self):
@@ -87,3 +86,4 @@ def process_dir(md_dir, pdf_dir):
 if __name__ == "__main__":
     process_dir('manuscripts/meta_analyses', 'manuscripts/pdfs')
     process_dir('manuscripts/meta_analyses_en', 'manuscripts/pdfs_en')
+    process_dir('manuscripts/meta_analyses_fr', 'manuscripts/pdfs_fr')
