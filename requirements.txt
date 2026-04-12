@@ -1,0 +1,14 @@
+certifi==2026.2.25
+charset-normalizer==3.4.7
+defusedxml==0.7.1
+fonttools==4.62.1
+fpdf2==2.8.7
+greenlet==3.3.2
+idna==3.11
+Markdown==3.10.2
+pillow==12.2.0
+playwright==1.58.0
+pyee==13.0.1
+requests==2.33.1
+typing_extensions==4.15.0
+urllib3==2.6.3
