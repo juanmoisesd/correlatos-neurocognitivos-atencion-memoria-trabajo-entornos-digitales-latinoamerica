@@ -1,57 +1,39 @@
 import os
 import markdown
 from fpdf import FPDF
-from fpdf.html import HTMLMixin
-import sys
 
-class MyFPDF(FPDF, HTMLMixin):
-    def __init__(self):
+class GlobalPDF(FPDF):
+    def __init__(self, lang):
         super().__init__()
-        font_locations = [
-            '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
-            '/usr/share/fonts/TTF/DejaVuSans.ttf',
-            'DejaVuSans.ttf'
-        ]
-        font_path = None
-        for loc in font_locations:
-            if os.path.exists(loc):
-                font_path = loc
-                break
+        self.lang = lang
+        # Register fonts
+        self.add_font('DejaVu', '', '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')
+        self.add_font('DejaVu', 'B', '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
 
-        if not font_path:
-            self.set_font("helvetica", size=11)
+        if lang in ['zh_Hant', 'ja', 'ko']:
+            self.add_font('CJK', '', '/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc')
+            self.set_font('CJK', size=11)
+            self.active_font = 'CJK'
+        elif lang in ['ar', 'he', 'hi']:
+            # FreeSans has good coverage for many scripts
+            self.add_font('FreeSans', '', '/usr/share/fonts/truetype/freefont/FreeSans.ttf')
+            self.set_font('FreeSans', size=11)
+            self.active_font = 'FreeSans'
         else:
-            self.add_font('DejaVu', '', font_path)
-
-            font_bold_path = font_path.replace('.ttf', '-Bold.ttf')
-            if os.path.exists(font_bold_path):
-                self.add_font('DejaVu', 'B', font_bold_path)
-            else:
-                self.add_font('DejaVu', 'B', font_path)
-
-            font_italic_path = font_path.replace('.ttf', '-Oblique.ttf')
-            if os.path.exists(font_italic_path):
-                self.add_font('DejaVu', 'I', font_italic_path)
-            else:
-                self.add_font('DejaVu', 'I', font_path)
+            self.set_font('DejaVu', size=11)
+            self.active_font = 'DejaVu'
 
     def header(self):
-        try:
-            self.set_font('DejaVu', 'B', 8)
-        except:
-            self.set_font('helvetica', 'B', 8)
-        self.cell(0, 10, 'Collection de Méta-Analyses Scientifiques - Juan Moisés de la Serna', align='C')
-        self.ln(10)
+        self.set_font(self.active_font, 'B' if self.active_font == 'DejaVu' else '', 8)
+        self.cell(0, 10, f'Meta-Analysis Collection ({self.lang}) - Juan Moisés de la Serna', align='C', new_x="LMARGIN", new_y="NEXT")
+        self.ln(5)
 
     def footer(self):
         self.set_y(-15)
-        try:
-            self.set_font('DejaVu', '', 8)
-        except:
-            self.set_font('helvetica', '', 8)
+        self.set_font(self.active_font, '', 8)
         self.cell(0, 10, f'Page {self.page_no()}', align='C')
 
-def md_to_pdf(md_path, pdf_path):
+def md_to_pdf(md_path, pdf_path, lang):
     with open(md_path, 'r', encoding='utf-8') as f:
         md_text = f.read()
 
@@ -59,31 +41,32 @@ def md_to_pdf(md_path, pdf_path):
     html = html.replace('<strong>', '<b>').replace('</strong>', '</b>')
     html = html.replace('<em>', '<i>').replace('</em>', '</i>')
 
-    font_family = "DejaVu" if "DejaVu" in MyFPDF().fonts else "helvetica"
-    styled_html = f'<div style="font-family: {font_family}; font-size: 11pt; text-align: justify;">{html}</div>'
-
-    pdf = MyFPDF()
+    pdf = GlobalPDF(lang)
     pdf.add_page()
+
+    # We use write_html for basic formatting
+    # For RTL, fpdf2 write_html has some limitations but we try
+    align = "right" if lang in ['ar', 'he'] else "justify"
+    styled_html = f'<div style="text-align: {align};">{html}</div>'
+
     pdf.write_html(styled_html)
     pdf.output(pdf_path)
 
-def process_dir(md_dir, pdf_dir):
-    if not os.path.exists(md_dir):
-        return
-    if not os.path.exists(pdf_dir):
-        os.makedirs(pdf_dir)
-
-    for filename in sorted(os.listdir(md_dir)):
-        if filename.endswith('.md'):
-            md_path = os.path.join(md_dir, filename)
-            pdf_path = os.path.join(pdf_dir, filename.replace('.md', '.pdf'))
-            print(f'Converting {md_path} to {pdf_path}...')
-            try:
-                md_to_pdf(md_path, pdf_path)
-            except Exception as e:
-                print(f"Failed to convert {md_path}: {e}")
-
 if __name__ == "__main__":
-    process_dir('manuscripts/meta_analyses', 'manuscripts/pdfs')
-    process_dir('manuscripts/meta_analyses_en', 'manuscripts/pdfs_en')
-    process_dir('manuscripts/meta_analyses_fr', 'manuscripts/pdfs_fr')
+    manuscripts_dir = 'manuscripts'
+    for lang_dir in sorted(os.listdir(manuscripts_dir)):
+        if lang_dir.startswith('meta_analyses_') and not lang_dir.endswith(('_en', '_fr')):
+            lang = lang_dir.replace('meta_analyses_', '')
+            md_path_dir = os.path.join(manuscripts_dir, lang_dir)
+            pdf_path_dir = os.path.join(manuscripts_dir, f'pdfs_{lang}')
+            if not os.path.exists(pdf_path_dir):
+                os.makedirs(pdf_path_dir)
+            for filename in sorted(os.listdir(md_path_dir)):
+                if filename.endswith('.md'):
+                    md_file = os.path.join(md_path_dir, filename)
+                    pdf_file = os.path.join(pdf_path_dir, filename.replace('.md', '.pdf'))
+                    print(f'Converting {md_file}...')
+                    try:
+                        md_to_pdf(md_file, pdf_file, lang)
+                    except Exception as e:
+                        print(f"Failed {md_file}: {e}")

@@ -1,0 +1,4 @@
+manuscripts/pdfs*
+__pycache__/
+*.pdf
+zenodo_log.txt
