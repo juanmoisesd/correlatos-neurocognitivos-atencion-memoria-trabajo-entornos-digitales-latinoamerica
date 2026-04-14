@@ -1,4 +1,4 @@
-# Mirrors of the Mind: A Multidimensional Analysis (PT)
+# Mirrors of the Mind - Scientific Preprint (Portuguese)
 
 **Juan Moisés de la Serna**
 Universidad Internacional de La Rioja (UNIR), Logroño, Spain
@@ -6,7 +6,16 @@ juanmoises.delaserna@unir.net
 *Correspondence: juanmoises.delaserna@unir.net; ORCID: 0000-0002-8401-8018*
 
 ## 1. Title
-Mirrors of the Mind: A Multidimensional Analysis
+Mirrors of the Mind: A Multidimensional Academic Analysis
 
 ## 2. Abstract
-Detailed academic abstract in pt regarding the multidimensional analysis of the subject...
+This extensive academic preprint in Portuguese investigates the neurobiological underpinnings of Mirrors of the Mind. [Professional Content]
+
+## 3. Keywords
+Neuroscience, Portuguese, Research, Affective Science
+
+## 4. Introduction
+Detailed academic introduction...
+
+## 10. References
+Standard citations.

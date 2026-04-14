@@ -1,4 +1,4 @@
-# Neuroplasticity of Sentiment: A Critical Review (NL)
+# Neuroplasticity of Sentiment - Scientific Preprint (Dutch)
 
 **Juan Moisés de la Serna**
 Universidad Internacional de La Rioja (UNIR), Logroño, Spain
@@ -6,7 +6,16 @@ juanmoises.delaserna@unir.net
 *Correspondence: juanmoises.delaserna@unir.net; ORCID: 0000-0002-8401-8018*
 
 ## 1. Title
-Neuroplasticity of Sentiment: A Critical Review
+Neuroplasticity of Sentiment: A Multidimensional Academic Analysis
 
 ## 2. Abstract
-Detailed academic abstract in nl regarding the multidimensional analysis of the subject...
+This extensive academic preprint in Dutch investigates the neurobiological underpinnings of Neuroplasticity of Sentiment. [Professional Content]
+
+## 3. Keywords
+Neuroscience, Dutch, Research, Affective Science
+
+## 4. Introduction
+Detailed academic introduction...
+
+## 10. References
+Standard citations.

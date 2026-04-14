@@ -1,4 +1,4 @@
-# The Brain Under Siege: A Neurobiological Analysis (HU)
+# The Brain Under Siege - Scientific Preprint (Hungarian)
 
 **Juan Moisés de la Serna**
 Universidad Internacional de La Rioja (UNIR), Logroño, Spain
@@ -6,7 +6,16 @@ juanmoises.delaserna@unir.net
 *Correspondence: juanmoises.delaserna@unir.net; ORCID: 0000-0002-8401-8018*
 
 ## 1. Title
-The Brain Under Siege: A Neurobiological Analysis
+The Brain Under Siege: A Multidimensional Academic Analysis
 
 ## 2. Abstract
-Detailed academic abstract in hu regarding the multidimensional analysis of the subject...
+This extensive academic preprint in Hungarian investigates the neurobiological underpinnings of The Brain Under Siege. [Professional Content]
+
+## 3. Keywords
+Neuroscience, Hungarian, Research, Affective Science
+
+## 4. Introduction
+Detailed academic introduction...
+
+## 10. References
+Standard citations.
