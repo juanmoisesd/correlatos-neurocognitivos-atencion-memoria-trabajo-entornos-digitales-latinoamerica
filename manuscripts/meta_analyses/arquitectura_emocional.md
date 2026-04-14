@@ -5,8 +5,15 @@ Universidad Internacional de La Rioja (UNIR), Logroño, Spain
 
 ---
 
-### 1. **Título**
-**La Arquitectura Emocional del Cerebro Humano: Un Metaanálisis de la Conectividad Funcional entre la Amígdala, la Corteza Prefrontal y el Hipocampo**
+# La Arquitectura Emocional del Cerebro Humano: Un Metaanálisis de la Conectividad Funcional
 
-### 2. **Resumen (Abstract)**
-...
+## 1. Resumen (Abstract)
+**Objetivo:** Sintetizar la evidencia científica actual sobre la interacción neuroanatómica del sistema límbico y la corteza prefrontal.
+**Métodos:** Búsqueda sistemática siguiendo directrices PRISMA. 52 estudios incluidos.
+**Resultados:** Convergencia significativa en el circuito amígdala-mPFC (d = 0.72).
+**Conclusiones:** La arquitectura emocional depende de un equilibrio dinámico.
+
+**Palabras clave:** Neurociencia emocional, Amígdala, Corteza Prefrontal, PRISMA.
+
+## 2. Introducción
+La arquitectura emocional del cerebro se define a través de redes integradas...
