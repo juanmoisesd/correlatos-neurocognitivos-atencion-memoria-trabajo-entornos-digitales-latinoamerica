@@ -1,0 +1,8 @@
+variable,type,description,unit
+subject_id,string,Unique participant ID,N/A
+age,integer,Age of participant,years
+gender,string,Gender identity,N/A
+digital_hours,float,Daily digital usage,hours
+attention_score,integer,Attention assessment score,points
+wm_score,integer,Working memory assessment score,points
+region,string,Latin American region,N/A

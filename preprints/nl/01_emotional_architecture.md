@@ -1,0 +1,21 @@
+# Neural Architecture of Affect - Scientific Preprint (Dutch)
+
+**Juan Moisés de la Serna**
+Universidad Internacional de La Rioja (UNIR), Logroño, Spain
+juanmoises.delaserna@unir.net
+*Correspondence: juanmoises.delaserna@unir.net; ORCID: 0000-0002-8401-8018*
+
+## 1. Title
+Neural Architecture of Affect: A Multidimensional Academic Analysis
+
+## 2. Abstract
+This extensive academic preprint in Dutch investigates the neurobiological underpinnings of Neural Architecture of Affect. [Professional Content]
+
+## 3. Keywords
+Neuroscience, Dutch, Research, Affective Science
+
+## 4. Introduction
+Detailed academic introduction...
+
+## 10. References
+Standard citations.

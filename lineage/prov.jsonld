@@ -1,0 +1,22 @@
+{
+  "@context": "http://www.w3.org/ns/prov-o#",
+  "@graph": [
+    {
+      "@id": "dataset:raw",
+      "@type": "Entity",
+      "label": "Raw Neurocognitive Data"
+    },
+    {
+      "@id": "activity:cleaning",
+      "@type": "Activity",
+      "label": "Data Cleaning",
+      "used": "dataset:raw"
+    },
+    {
+      "@id": "dataset:clean",
+      "@type": "Entity",
+      "label": "Cleaned Neurocognitive Data",
+      "wasGeneratedBy": "activity:cleaning"
+    }
+  ]
+}
