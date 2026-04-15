@@ -1,9 +1,3 @@
-certifi
-charset-normalizer
-defusedxml
-fonttools
 fpdf2
-Markdown
-pillow
+markdown
 requests
-urllib3
