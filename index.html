@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Correlatos Neurocognitivos - Atención, Memoria y Entornos Digitales en Latinoamérica</title>
+  <meta name="description" content="Base de datos abierta sobre correlatos neurocognitivos de la atención y memoria de trabajo en entornos digitales latinoamericanos. DOI: 10.6084/m9.figshare.31436764">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; }
+    header { background: linear-gradient(135deg, #1a1f2e 0%, #0d1117 100%); border-bottom: 1px solid #30363d; padding: 60px 20px 40px; text-align: center; }
+    header h1 { font-size: clamp(1.4rem, 3vw, 2.2rem); font-weight: 700; color: #58a6ff; max-width: 900px; margin: 0 auto 16px; }
+    header p.subtitle { color: #8b949e; font-size: 1.1rem; max-width: 700px; margin: 0 auto 24px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px; }
+    .badge { background: #21262d; border: 1px solid #30363d; border-radius: 20px; padding: 6px 14px; font-size: 0.85rem; color: #8b949e; }
+    .badge a { color: #58a6ff; text-decoration: none; }
+    .badge a:hover { text-decoration: underline; }
+    nav { background: #161b22; border-bottom: 1px solid #30363d; padding: 12px 20px; display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+    nav a { color: #8b949e; text-decoration: none; font-size: 0.95rem; padding: 4px 8px; border-radius: 6px; transition: all 0.2s; }
+    nav a:hover { color: #58a6ff; background: #21262d; }
+    main { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 40px 0; }
+    .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; transition: border-color 0.2s, transform 0.2s; }
+    .card:hover { border-color: #58a6ff; transform: translateY(-2px); }
+    .card-icon { font-size: 2rem; margin-bottom: 12px; }
+    .card h3 { color: #e6edf3; font-size: 1.1rem; margin-bottom: 8px; }
+    .card p { color: #8b949e; font-size: 0.9rem; }
+    .card a { color: #58a6ff; text-decoration: none; font-size: 0.9rem; display: inline-block; margin-top: 10px; }
+    .card a:hover { text-decoration: underline; }
+    h2 { font-size: 1.5rem; color: #e6edf3; border-bottom: 1px solid #30363d; padding-bottom: 12px; margin: 48px 0 24px; }
+    .info-table { width: 100%; border-collapse: collapse; background: #161b22; border-radius: 12px; overflow: hidden; border: 1px solid #30363d; }
+    .info-table th, .info-table td { padding: 14px 18px; text-align: left; border-bottom: 1px solid #30363d; }
+    .info-table th { background: #21262d; color: #8b949e; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .info-table td { color: #e6edf3; font-size: 0.95rem; }
+    .info-table tr:last-child td { border-bottom: none; }
+    .info-table a { color: #58a6ff; text-decoration: none; }
+    .info-table a:hover { text-decoration: underline; }
+    .section-desc { color: #8b949e; margin-bottom: 24px; font-size: 0.95rem; }
+    .highlight { background: #1f6feb22; border: 1px solid #1f6feb; border-radius: 8px; padding: 16px 20px; margin: 20px 0; color: #79c0ff; font-size: 0.95rem; }
+    footer { background: #161b22; border-top: 1px solid #30363d; padding: 40px 20px; text-align: center; color: #8b949e; font-size: 0.9rem; margin-top: 60px; }
+    footer a { color: #58a6ff; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .tag { display: inline-block; background: #21262d; border: 1px solid #30363d; border-radius: 4px; padding: 2px 8px; font-size: 0.8rem; color: #8b949e; margin: 3px; }
+    @media (max-width: 600px) { main { padding: 20px 12px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Correlatos Neurocognitivos de la Atención y la Memoria de Trabajo en Entornos Digitales en Latinoamérica</h1>
+    <p class="subtitle">Base de datos abierta con estadísticas, meta-análisis, preprints y herramientas científicas sobre neurociencia cognitiva digital en América Latina</p>
+    <div class="badges">
+      <span class="badge">🧠 Neurociencia Cognitiva</span>
+      <span class="badge">🌎 Latinoamérica</span>
+      <span class="badge">📖 <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a></span>
+      <span class="badge">🔗 <a href="https://doi.org/10.6084/m9.figshare.31436764">DOI: 10.6084/m9.figshare.31436764</a></span>
+      <span class="badge">👤 <a href="https://orcid.org/0000-0002-8401-8018">ORCID: 0000-0002-8401-8018</a></span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">Acerca del proyecto</a>
+    <a href="#structure">Estructura</a>
+    <a href="#resources">Recursos</a>
+    <a href="#cite">Citar</a>
+    <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica">GitHub</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>📌 Acerca del Proyecto</h2>
+      <p class="section-desc">Este repositorio es un hub científico abierto dedicado al estudio de los correlatos neurocognitivos de la atención, la memoria de trabajo y la carga cognitiva en entornos digitales latinoamericanos.</p>
+      <div class="highlight">
+        🎯 Objetivo: Consolidar datos, estadísticas, meta-análisis y herramientas reproducibles sobre neurociencia cognitiva digital en América Latina, contribuyendo a la ciencia abierta hispana.
+      </div>
+      <table class="info-table">
+        <tr><th>Campo</th><th>Información</th></tr>
+        <tr><td>Autor</td><td>Juan Moisés de la Serna Tuya</td></tr>
+        <tr><td>Institución</td><td>Universidad Internacional de La Rioja (UNIR)</td></tr>
+        <tr><td>ORCID</td><td><a href="https://orcid.org/0000-0002-8401-8018">0000-0002-8401-8018</a></td></tr>
+        <tr><td>Licencia</td><td><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal – Dominio Público</a></td></tr>
+        <tr><td>DOI (Figshare)</td><td><a href="https://doi.org/10.6084/m9.figshare.31436764">10.6084/m9.figshare.31436764</a></td></tr>
+        <tr><td>DOI (Zenodo)</td><td><a href="https://zenodo.org/badge/latestdoi/952474050">zenodo.org/badge/latestdoi/952474050</a></td></tr>
+      </table>
+    </section>
+
+    <section id="structure">
+      <h2>📂 Estructura del Repositorio</h2>
+      <p class="section-desc">El repositorio está organizado en módulos temáticos para facilitar la navegación y reutilización científica.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h3>data/</h3>
+          <p>Datos estadísticos, datasets neurocognitivos, esquemas y diccionarios de variables.</p>
+          <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/tree/main/data">Ver datos →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">📄</div>
+          <h3>preprints/</h3>
+          <p>310+ preprints multilingües en neurociencia cognitiva y entornos digitales.</p>
+          <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/tree/main/preprints">Ver preprints →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">📝</div>
+          <h3>manuscripts/</h3>
+          <p>Manuscritos científicos con meta-análisis sobre neurociencia cognitiva digital.</p>
+          <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/tree/main/manuscripts">Ver manuscritos →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">📓</div>
+          <h3>notebooks/</h3>
+          <p>Jupyter notebooks con análisis reproducibles y visualizaciones interactivas.</p>
+          <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/tree/main/notebooks">Ver notebooks →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏛️</div>
+          <h3>results/policy_briefs/</h3>
+          <p>30+ policy briefs de neurociencia para tomadores de decisiones y organismos públicos.</p>
+          <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/tree/main/results/policy_briefs">Ver policy briefs →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤖</div>
+          <h3>scripts/</h3>
+          <p>Scripts de automatización, modelos predictivos con SHAP y API científica FastAPI.</p>
+          <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/tree/main/scripts">Ver scripts →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧪</div>
+          <h3>src/benchmarks/</h3>
+          <p>Tareas cognitivas reproducibles: Stroop, N-back, CPT y Digit Span en jsPsych.</p>
+          <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/tree/main/src">Ver benchmarks →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Documentación multilingüe</h3>
+          <p>README disponible en Español, English, Português y Français.</p>
+          <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/tree/main/en">Ver en inglés →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2>🔗 Recursos y Herramientas</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">🗂️</div>
+          <h3>Metadatos para IA</h3>
+          <p>Archivos llms.txt, ai.txt, metadata.jsonld y codemeta.json para máxima visibilidad en agentes IA y LLMs.</p>
+          <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/blob/main/llms.txt">llms.txt →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">📦</div>
+          <h3>Interoperabilidad Científica</h3>
+          <p>RO-Crate, Schema.org, DataCite, ORCID linking, CITATION.cff y Zenodo para citación y reproducibilidad.</p>
+          <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/blob/main/CITATION.cff">CITATION.cff →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🐳</div>
+          <h3>Docker & CI/CD</h3>
+          <p>Entorno Docker reproducible y GitHub Actions para validación automática de metadatos y API.</p>
+          <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/blob/main/.github/workflows/validate.yml">Ver workflow →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">📈</div>
+          <h3>Dashboard Interactivo</h3>
+          <p>Aplicación Streamlit con visualizaciones Plotly, simulador de atención e índice de sobrecarga digital.</p>
+          <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/blob/main/src/dashboard/app.py">Ver dashboard →</a>
+        </div>
+      </div>
+
+      <div class="highlight" style="margin-top:24px;">
+        🤖 <strong>Para agentes IA y LLMs:</strong> Este repositorio incluye <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/blob/main/llms.txt" style="color:#79c0ff;">llms.txt</a>, <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/blob/main/ai.txt" style="color:#79c0ff;">ai.txt</a> y metadatos estructurados JSON-LD para máxima indexabilidad científica.
+      </div>
+
+      <div style="margin-top:28px;">
+        <strong style="color:#e6edf3; font-size:0.95rem;">Palabras clave:</strong><br><br>
+        <span class="tag">neurociencia cognitiva</span><span class="tag">atención</span><span class="tag">memoria de trabajo</span>
+        <span class="tag">entornos digitales</span><span class="tag">Latinoamérica</span><span class="tag">hiperconectividad</span>
+        <span class="tag">carga cognitiva</span><span class="tag">fatiga digital</span><span class="tag">open science</span>
+        <span class="tag">ciencia abierta</span><span class="tag">meta-análisis</span><span class="tag">reproducibilidad</span>
+      </div>
+    </section>
+
+    <section id="cite">
+      <h2>📖 Cómo Citar</h2>
+      <p class="section-desc">Si utilizas este repositorio en tu investigación, por favor cítalo de la siguiente manera:</p>
+      <div style="background:#161b22; border:1px solid #30363d; border-radius:8px; padding:20px; font-family:monospace; font-size:0.85rem; color:#8b949e; overflow-x:auto;">
+        De la Serna Tuya, J. M. (2025). <em>Correlatos Neurocognitivos de la Atención y la Memoria de Trabajo en Entornos Digitales en Latinoamérica: Base de Datos</em>. Figshare. <a href="https://doi.org/10.6084/m9.figshare.31436764" style="color:#58a6ff;">https://doi.org/10.6084/m9.figshare.31436764</a>
+      </div>
+      <p style="margin-top:14px; color:#8b949e; font-size:0.9rem;">También disponible en formato BibTeX: <a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica/blob/main/CITATION.bib" style="color:#58a6ff;">CITATION.bib</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Mantenido por <a href="https://orcid.org/0000-0002-8401-8018">Juan Moisés de la Serna Tuya</a> — Universidad Internacional de La Rioja (UNIR)</p>
+    <p style="margin-top:8px;">Licencia <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a> — Dominio Público</p>
+    <p style="margin-top:8px;"><a href="https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica">Ver en GitHub</a></p>
+  </footer>
+</body>
+</html>
