@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Logs
+*.log
+test_output.txt
+
+# OS
+.DS_Store
+
+# Data (if you want to keep data out of git, but here we might want to keep the structure)
+# data/raw/*
+# !data/raw/.gitkeep

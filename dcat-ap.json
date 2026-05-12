@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@type": "dcat:Dataset",
+  "dct:title": "Correlatos Neurocognitivos de la Atención y la Memoria de Trabajo en Entornos Digitales en Latinoamérica",
+  "dct:description": "Database of figures and statistics on the neurocognitive correlates of attention and working memory in digital environments in Latin America.",
+  "dcat:keyword": ["neurocognition", "attention", "working memory"],
+  "dct:publisher": {
+    "@type": "foaf:Person",
+    "foaf:name": "Juan Moisés de la Serna Tuya"
+  },
+  "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:accessURL": "https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica",
+    "dct:license": "https://creativecommons.org/publicdomain/zero/1.0/"
+  }
+}

@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  analysis:
+    build: .
+    volumes:
+      - .:/app
+    command: ["/bin/bash", "run.sh"]

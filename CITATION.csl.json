@@ -1,0 +1,23 @@
+[
+  {
+    "type": "dataset",
+    "id": "delaserna2024",
+    "title": "Correlatos Neurocognitivos de la Atención y la Memoria de Trabajo en Entornos Digitales en Latinoamérica: Base de Datos de Cifras y Estadísticas",
+    "author": [
+      {
+        "family": "de la Serna Tuya",
+        "given": "Juan Moisés"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "DOI": "10.5281/zenodo.19145316",
+    "URL": "https://github.com/juanmoisesd/correlatos-neurocognitivos-atencion-memoria-trabajo-entornos-digitales-latinoamerica",
+    "publisher": "Zenodo"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "files": [
+    { "path": "README.md", "sha256": "..." },
+    { "path": "LICENSE", "sha256": "..." }
+  ]
+}

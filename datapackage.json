@@ -1,0 +1,20 @@
+{
+  "name": "correlatos-neurocognitivos-latam",
+  "title": "Correlatos Neurocognitivos de la Atención y la Memoria de Trabajo en Entornos Digitales en Latinoamérica",
+  "resources": [
+    {
+      "path": "data/raw/dataset.csv",
+      "name": "raw-data",
+      "profile": "tabular-data-resource",
+      "schema": "schema.json"
+    }
+  ],
+  "profile": "tabular-data-package",
+  "licenses": [
+    {
+      "name": "CC0-1.0",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "title": "Creative Commons Zero v1.0 Universal"
+    }
+  ]
+}

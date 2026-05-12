@@ -1,0 +1,10 @@
+{
+  "signatures": [],
+  "signed": {
+    "_type": "snapshot",
+    "expires": "2025-04-06T00:00:00Z",
+    "meta": {},
+    "spec_version": "1.0.31",
+    "version": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "signatures": [],
+  "signed": {
+    "_type": "root",
+    "consistent_snapshot": true,
+    "expires": "2025-04-06T00:00:00Z",
+    "keys": {},
+    "roles": {},
+    "spec_version": "1.0.31",
+    "version": 1
+  }
+}

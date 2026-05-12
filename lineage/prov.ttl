@@ -1,0 +1,14 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dataset: <http://example.org/dataset/> .
+@prefix activity: <http://example.org/activity/> .
+
+dataset:raw a prov:Entity ;
+    prov:label "Raw Neurocognitive Data" .
+
+activity:cleaning a prov:Activity ;
+    prov:label "Data Cleaning" ;
+    prov:used dataset:raw .
+
+dataset:clean a prov:Entity ;
+    prov:label "Cleaned Neurocognitive Data" ;
+    prov:wasGeneratedBy activity:cleaning .
