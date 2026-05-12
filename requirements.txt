@@ -1,6 +1,6 @@
 pandas==2.2.1
 numpy==1.26.4
-jsonschema==4.21.1
+jsonschema==4.26.0
 pytest==8.1.1
 snakemake==8.10.1
 matplotlib==3.8.3
